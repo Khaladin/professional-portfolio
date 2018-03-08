@@ -2,7 +2,7 @@
   "name": "finished-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Khaladin.github.io/portfolio-gh-pages",
+  "homepage": "https://khaladin.github.io/portfolio-gh-pages/",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "lodash": "^4.17.5",
