@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 import Header from './components/portfolio-components/header';
 import Contact from './components/portfolio-components/contact-card';

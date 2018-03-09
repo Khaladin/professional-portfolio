@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {Link} from  'react-router-dom';
 import * as actions from '../../actions/posts_actions'
-import history from '../../history';
 
 class PostShow extends Component {
 
