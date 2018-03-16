@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import { HashRouter, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 import { Router } from 'react-router';
 import reduxThunk from 'redux-thunk';
 import promise from 'redux-promise';
@@ -28,20 +28,20 @@ const store = createStoreWithMiddleWare(reducers);
 
 ReactDOM.render(
   <Provider store={store}>
-    <HashRouter>
+    <BrowserRouter>
       <Router history={history}>
           <Switch>
-            <Route exact path={process.env.PUBLIC_URL + '/'} component={Portfolio} />
-            <Route path={process.env.PUBLIC_URL + '/taskapp/add-task'} component={NewPost} />
-            <Route path={process.env.PUBLIC_URL + '/taskapp/display-tasks'} component={DisplayTasks} />
-            <Route path={process.env.PUBLIC_URL + '/taskapp/display-task/:id'} component={PostShow} />
-            <Route path={process.env.PUBLIC_URL + '/taskapp/signin'} component={Signin} />
-            <Route path={process.env.PUBLIC_URL + '/taskapp/signup'} component={Signup} />
-            <Route path={process.env.PUBLIC_URL + '/taskapp/signout'} component={Signout} />
-            <Route path={process.env.PUBLIC_URL + '/taskapp'} component={TaskAgenda} />
+            <Route exact path='/' component={Portfolio} />
+            <Route path='/taskapp/add-task' component={NewPost} />
+            <Route path='/taskapp/display-tasks' component={DisplayTasks} />
+            <Route path='/taskapp/display-task/:id' component={PostShow} />
+            <Route path='/taskapp/signin' component={Signin} />
+            <Route path='/taskapp/signup' component={Signup} />
+            <Route path='/taskapp/signout' component={Signout} />
+            <Route path='/taskapp' component={TaskAgenda} />
           </Switch>
       </Router>
-    </HashRouter>
+    </BrowserRouter>
   </Provider>
   , document.getElementById('root'));
 registerServiceWorker();

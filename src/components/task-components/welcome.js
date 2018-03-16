@@ -1,6 +1,18 @@
 import React, {Component} from 'react';
+import history from '../../history';
+import { connect } from 'react-redux';
+import * as actions from '../../actions/auth_actions';
 
 class Welcome extends Component {
+//   componentDidMount() {
+//     const token = localStorage.getItem('token');
+//     // If we have a token, consider the user to be signed in
+//     if (token) {
+//       //We need to update application state
+//       this.props.setAuthUser(localStorage.getItem('email'));
+//       history.push('/taskapp/display-tasks');
+// }
+  // }
   render() {
     return (
       <div>
@@ -15,5 +27,8 @@ class Welcome extends Component {
   }
 }
 
+function mapStateToProps(state) {
+  return {...state, authenticated: state.auth.authenticated};
+}
 
-export default Welcome;
+export default connect(mapStateToProps, actions)(Welcome);

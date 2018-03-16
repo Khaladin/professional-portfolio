@@ -21,7 +21,7 @@ class Contact extends Component {
           <div class="contact__card-about-mission info-text">
             <div>
               A highley driven software developer. Diligently spends free time creating personal projects
-              and exploring new programming languages & frameworks. Seeking entery_level software development position.
+              and exploring new programming languages & frameworks. Seeking entery level software development position.
             </div>
             <div>
               <ul class="fa-ul contact__card-list">

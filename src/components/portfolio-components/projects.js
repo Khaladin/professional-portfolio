@@ -96,7 +96,7 @@ class Projects extends Component {
 
               <div class="card__side card__side--back">
                 <div class="card__cta">
-                  <p class="card__cta--text">I like this picture I colored because it has helpped
+                  <p class="card__cta--text">I like this picture I colored because it has helped
                   me with my focus. I also like it because I had started feeling recently that I
                   consummed too much in my life; that I needed to start creating more. One of the
                   reasons I love programming is that it allows me to create on a daily basis. I

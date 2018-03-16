@@ -79,7 +79,7 @@ class Skills extends Component {
             <div class="col-1-of-2">
               <div class="skills__buttons">
                 <div>
-                  <button class="button" onClick={this.toggleDivJS}><h4>JavaScript</h4></button>
+                  <button class="button-JS button" onClick={this.toggleDivJS}><h4>JavaScript</h4></button>
                 </div>
                 <div>
                   <button class="button" onClick={this.toggleDivHTML}><h4>HTML & CSS</h4></button>
