@@ -380,7 +380,15 @@ margin: 2rem 2rem;
   transform: translateY(-2rem);
 }
 
-@media only screen and (max-width: 42.5rem) {
+@media only screen and (max-width: 32rem) {
+  body {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #40291c;
+    padding: 1rem; }
+
   .section-header {
     height: 35vh;
     width: 90vw;
@@ -393,12 +401,12 @@ margin: 2rem 2rem;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); }
   .contact__card-name {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 200;
     text-align: center; }
 
   .contact__card-title {
-    font-size: 3rem;
+    font-size: 1.7rem;
     font-weight: 150;
     text-align: center; }
   .contact__card-list {
@@ -426,7 +434,7 @@ margin: 2rem 2rem;
 
   .contact__card-picture {
     height: 25rem;
-    width: 25rem;
+    width: 80%;
     margin: 0 2rem;
     background-image: url(./pics/Cory_smile.jpg);
     background-size: cover;
@@ -449,23 +457,24 @@ margin: 2rem 2rem;
     background-position: bottom;
     border-radius: 6px;
     position: relative;
-    box-shadow: -1.5rem 1.5rem 3rem rgba(0, 0, 0, 0.25); }
+    box-shadow: -1rem 1.5rem 3rem rgba(0, 0, 0, 0.25); }
 
     .link-box {
     background-color: #f7f7f7;
-    padding: 1rem 4rem;
-    display: block;
+    width: 6rem;
+    padding: 1rem .5rem;
+    display: inline-block;
     text-align: center;
     box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
     transition: transform .3s;
     transform: skewY(-2deg); }
   .link-box__text {
-    font-size: 1rem;
-    padding: rem;
+    font-size: .9rem;
+
     border-radius: 6px; }
   .link-box__icon {
-    padding: 1rem;
-    font-size: 3rem;
+    padding: .5rem;
+    font-size: 2rem;
     color: #a6b5c5; }
   .link-box:hover {
     box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.18);
@@ -473,6 +482,7 @@ margin: 2rem 2rem;
   .section-links {
     margin: 4rem 0;
     padding: 3rem 0;
+    width: 93vw;
     background-color: #ece093;
     transform: skewY(2deg); }
   .row {

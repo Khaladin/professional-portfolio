@@ -37,7 +37,7 @@ class ContactLinks extends Component {
           </div>
 
           <div class="col-1-of-5">
-          <a href="./CoryHobanResume2018.doc">
+          <a href="./CoryHobanResume2018.docx">
             <div class="link-box">
               <div class="link-box__icon">
                 <FaFile />
